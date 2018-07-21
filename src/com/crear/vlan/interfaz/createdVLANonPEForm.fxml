@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPaneVlan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.crear.vlan.logica.CreatedVLANonPEFormController">
+   <children>
+      <AnchorPane fx:id="mainContainerVlan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="411.0">
+         <children>
+            <Pane prefHeight="311.0" prefWidth="411.0" style="-fx-background-color: #fff;">
+               <children>
+                  <GridPane alignment="CENTER" hgap="5.0" layoutX="42.0" layoutY="70.0" prefHeight="158.0" prefWidth="327.0" vgap="5.0">
+                     <children>
+                        <JFXTextField fx:id="txtEmpresa" labelFloat="true" promptText="Ingrese el nombre de la empresa" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Arial Narrow" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtCiudad" labelFloat="true" promptText="Especifique la ciudad" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Narrow" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtNumVlan" labelFloat="true" promptText="Ingresa el ID de la VLAN [2-4096]" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial Narrow" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="39.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="283.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane hgap="5.0" layoutX="115.0" layoutY="240.0" prefHeight="50.0" prefWidth="182.0" vgap="5.0">
+                     <children>
+                        <JFXButton fx:id="btnCrear" onAction="#verifyCreacionOfVLAN" prefHeight="59.0" prefWidth="182.0" style="-fx-border-radius: 25; -fx-border-color: #016D9C; -fx-background-radius: 25; -fx-background-color: #016D9C;" text="Crear VLAN" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Narrow" size="22.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="262.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Pane prefHeight="50.0" prefWidth="411.0" style="-fx-background-color: #016D9C;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="9.0" text="CREACION DE NUEVA VLAN" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btnSalir" layoutX="306.0" layoutY="9.0" onAction="#closeDialog" prefHeight="33.0" prefWidth="91.0" style="-fx-border-color: #000; -fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #016D9C;" text="CERRAR" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="com.crear.vrf.logica.CrearVRFonPEController" fx:id="crearVLANFOrm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="311.0" prefWidth="411.0" style="-fx-background-color: #fff;">
+         <children>
+            <GridPane alignment="CENTER" hgap="5.0" layoutX="42.0" layoutY="70.0" prefHeight="158.0" prefWidth="327.0" vgap="5.0">
+               <children>
+                  <FontAwesomeIcon iconName="BANK" size="3em" />
+                  <FontAwesomeIcon iconName="MAP_MARKER" size="3em" GridPane.rowIndex="1" />
+                  <FontAwesomeIcon iconName="SLACK" size="3em" GridPane.rowIndex="2" />
+                  <JFXComboBox prefHeight="25.0" prefWidth="286.0" promptText="SELECCIONAR EMPRESA" visibleRowCount="20" GridPane.columnIndex="1" />
+                  <JFXComboBox prefHeight="25.0" prefWidth="293.0" promptText="SELECCIONAR CIUDAD" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXComboBox prefHeight="25.0" prefWidth="314.0" promptText="SELECCIONAR VLAN" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="287.0" minWidth="10.0" prefWidth="39.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="283.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane hgap="5.0" layoutX="115.0" layoutY="240.0" prefHeight="50.0" prefWidth="182.0" vgap="5.0">
+               <children>
+                  <JFXButton prefHeight="59.0" prefWidth="182.0" style="-fx-border-radius: 25; -fx-border-color: #016D9C; -fx-background-radius: 25; -fx-background-color: #016D9C;" text="Crear VLAN" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Narrow" size="22.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="262.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Pane prefHeight="50.0" prefWidth="411.0" style="-fx-background-color: #016D9C;">
+               <children>
+                  <Label layoutX="14.0" layoutY="13.0" text="CREACION DE VRF" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnSalir" layoutX="306.0" layoutY="9.0" onAction="#closeDialog" prefHeight="33.0" prefWidth="91.0" style="-fx-border-color: #000; -fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #016D9C;" text="CERRAR" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="TIMES" size="2em" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<JFXDialogLayout fx:id="dialogLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="305.0">
+         <children>
+            <Label layoutX="89.0" layoutY="40.0" prefHeight="84.0" prefWidth="214.0" text="LA EMPRESA [NOMBRE DE LA EMPRESA AQUI] YA POSEE VLAN(S) ASIGNADA(S)." wrapText="true">
+               <font>
+                  <Font name="Arial Narrow Bold" size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutY="-8.0" prefHeight="45.0" prefWidth="305.0" style="-fx-background-color: #A00000;">
+               <children>
+                  <Label layoutX="14.0" layoutY="12.0" text="ALGO ESTA MAL" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="71.0" fitWidth="72.0" layoutX="9.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../ICONOS/error_red_192x192.png" />
+               </image></ImageView>
+            <JFXButton layoutX="45.0" layoutY="165.0" prefWidth="100.0" style="-fx-background-color: #A00000;" text="Si" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="165.0" layoutY="165.0" prefWidth="100.0" style="-fx-background-color: #A00000;" text="No" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="27.0" layoutY="120.0" prefHeight="45.0" prefWidth="252.0" text="DESEA CREAR UNA NUEVA VLAN PARA LA CIUDAD?" wrapText="true">
+               <font>
+                  <Font name="Arial Narrow Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</JFXDialogLayout>

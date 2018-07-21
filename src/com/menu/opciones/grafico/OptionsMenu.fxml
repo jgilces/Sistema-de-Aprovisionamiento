@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.opciones.logica.OptionsMenuController">
+   <children>
+      <AnchorPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="446.0" fitWidth="600.0" opacity="0.86" pickOnBounds="true">
+               <image>
+                  <Image url="file:/K:/NetBeansProjects/Proyecto_Interfaz_v0.1/Imagene/907086.jpg" />
+               </image>
+            </ImageView>
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="189.0" layoutY="35.0" opacity="0.9" prefHeight="411.0" prefWidth="189.0" style="-fx-background-color: #018ECB;" />
+            <Pane layoutY="-2.0" opacity="0.9" prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: #016D9C;">
+               <children>
+                  <JFXHamburger fx:id="hambuger" layoutX="14.0" layoutY="9.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXHamburger>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#dialogLayout{
+    -fx-border-radius: 10;
+}
+
+#basePane{
+    -fx-border-radius: 10;
+}

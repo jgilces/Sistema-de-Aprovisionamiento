@@ -1,0 +1,19 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#crVLAN:hover{
+    -fx-background-color: #0082BB;
+}
+
+#crVRF:hover{
+    -fx-background-color: #0082BB;
+}
+
+#crSUB:hover{
+    -fx-background-color: #0082BB;
+}
+
+#logout:hover{
+    -fx-background-color: #0082BB;
+}
